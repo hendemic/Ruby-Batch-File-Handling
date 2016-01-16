@@ -1,0 +1,31 @@
+> directory   Defines directory to batch handle files from
+
+> filter      Changes scope of functions
+                Options:
+                  +filetype - Filters by specific file extension and selects only a certain filetype
+                  +datecreated - Filters by the date the file was created
+                  +all - removes filter and selects all files in directory
+
+> rename      Allows sequential rename of file list.
+
+                Inputs:
+                  +rootName - the base file name in sequence
+                  +startingNumber - number to begin sequence with
+                Rename Methods:
+                  +prefix   Puts number at beginning of file name
+
+                              01_rootName.ext
+
+                  +suffix   Puts number at end of file name
+
+                              rootName_01.ext
+
+                Special Conventions:
+                  +datecreated  Adds date to end of filename.
+                              01_rootName_DD-MM-YYYY.ext
+                              rootName_DD-MM-YYYY_01.ext
+> suffix        Adds a suffix to each file
+
+> prefix        Adds a prefix to each file
+
+> quit          Exits the program
